@@ -6,7 +6,7 @@ on:
     branches: [ main, cinema ]
     paths:
       - 'src/**'
-      - '.gitihub/workflows/docker-buld-push.yml'
+      - '.github/workflows/docker-build-push.yml'
   release:
     types: [published]
 
@@ -50,7 +50,7 @@ jobs:
             type=ref,event=branch
             latest
 
-      - name: Build and push Monolith Docker image
+      - name: Build and push Monolith Docker image1
         uses: docker/build-push-action@v4
         with:
           context: ./src/monolith
