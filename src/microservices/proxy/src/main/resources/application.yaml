@@ -18,7 +18,7 @@ spring:
             - id: users
               uri: ${MONOLITH_URL:http://localhost:8080/}
               predicates:
-                - Path=/api/users/**
+                - Path=/api/**
 
 logging:
   level:

@@ -14,7 +14,6 @@ public class GatewayApplication {
 
     @Bean
     public FeatureFlagFilterFunctions.FilterSupplier supplier() {
-        // asdasfasfaf
         return new FeatureFlagFilterFunctions.FilterSupplier();
     }
 
