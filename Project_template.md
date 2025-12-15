@@ -56,9 +56,12 @@
     - Реализуйте простой API, при вызове которого будут создаваться события User/Payment/Movie и обрабатываться внутри сервиса с записью в лог
     - Добавьте в docker-compose новый сервис, kafka там уже есть
 
-Необходимые тесты для проверки этого API вызываются при запуске npm run test:local из папки tests/postman 
-Приложите скриншот тестов и скриншот состояния топиков Kafka http://localhost:8090 
-
+Необходимые тесты для проверки этого API вызываются при запуске npm run test:local из папки tests/postman<br>
+<br>
+Результат:
+ - [Tests](screenshots/Tests%20local.png)
+ - [Kafka topics](screenshots/Kafka%20topics%20local.png)
+ - [Kafka consumers](screenshots/Kafka%20consumers%20local.png)
 
 ## Задание 3
 
@@ -272,8 +275,12 @@ cat .docker/config.json | base64
   Откройте логи event-service и сделайте скриншот обработки событий
 
 #### Шаг 3
-Добавьте сюда скриншота вывода при вызове https://cinemaabyss.example.com/api/movies и  скриншот вывода event-service после вызова тестов.
-
+Добавьте сюда скриншота вывода при вызове https://cinemaabyss.example.com/api/movies и  скриншот вывода event-service после вызова тестов.<br>
+<br>
+Результат:
+- [Tests](screenshots/Tests%20kubernetis.png)
+- [Events-service](screenshots/Event-service%20logs%20kubernetes.png)
+- [Movies-service](screenshots/GET%20cinemaabyss.example.com_api_movies.png)
 
 ## Задание 4
 Для простоты дальнейшего обновления и развертывания вам как архитектуру необходимо так же реализовать helm-чарты для прокси-сервиса и проверить работу 
