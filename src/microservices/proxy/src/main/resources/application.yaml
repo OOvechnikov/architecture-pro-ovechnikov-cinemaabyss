@@ -19,10 +19,3 @@ spring:
               uri: ${MONOLITH_URL:http://localhost:8080/}
               predicates:
                 - Path=/api/**
-
-logging:
-  level:
-    org:
-      springframework:
-        cloud:
-          gateway: trace

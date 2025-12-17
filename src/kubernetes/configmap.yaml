@@ -18,7 +18,7 @@ data:
   # Strangler Fig configuration
   GRADUAL_MIGRATION: "true"
   PROXY_SERVICE_PORT: "8000"
-  MOVIES_MIGRATION_PERCENT: "100"
+  MOVIES_MIGRATION_PERCENT: "50"
 
   # Events service configuration
   EVENTS_SERVICE_PORT: "8082"

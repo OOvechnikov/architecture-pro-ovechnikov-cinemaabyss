@@ -19,7 +19,7 @@ public abstract class FeatureFlagFilterFunctions {
     @Shortcut
     public static HandlerFilterFunction<ServerResponse, ServerResponse> featureFlag(boolean enable, URI redirectTo, int percent) {
         return (request, next) -> {
-            if (enable && Math.random() * 100 > percent % 100) {
+            if (enable && Math.random() > (double) percent / 100) {
                 MvcUtils.setRequestUrl(request, redirectTo);
             }
 
