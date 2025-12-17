@@ -1,0 +1,4 @@
+rootProject.name = "cinemaabyss"
+
+include "events"
+include "proxy"
